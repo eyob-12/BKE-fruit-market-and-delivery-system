@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bke fruit</title>
+    <link rel="stylesheet" href="css/homePage.css">
+</head>
+<body class="container">
+
+    <div >
+    <img id="myImage" src="img/homePage1.jpg" alt="Photo">
+    <h1 class="text">BKE FRUIT MARKET AND DELIVERY SYSTEM</h1>
+    <button class="styled-button"><a href="home.html"> see more</a> </button>
+    
+    <script>
+        var photos = ["img/homePage2.jpg", "img/homePage3.jpg", "img/homePage4.jpg", "img/homePage5.jpg", "img/homePage6.jpg", "img/homePage7.jpg"];
+        var index = 0;
+        var image = document.getElementById("myImage");
+
+        function changePhoto() {
+            image.src = photos[index];
+            index = (index + 1) % photos.length;
+
+            setTimeout(changePhoto, 3000);
+        }
+
+        changePhoto(); // Start changing photos
+    </script>
+    </div>
+</body>
+</html>
