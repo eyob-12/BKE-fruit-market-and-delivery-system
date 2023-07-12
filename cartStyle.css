@@ -51,6 +51,7 @@ header .shopping img{
 }
 header .shopping span{
     background: red;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

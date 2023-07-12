@@ -1,0 +1,337 @@
+body{
+    
+    background-color:#808080;
+}
+main {
+    background-color:aliceblue;
+    padding-top: 30px;
+
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+} 
+.breadcrumb{
+   width:70vw;
+   height: 40px;
+   background-color:  #e4ce09;
+   margin:0px auto;
+}
+
+main .breadcrumb ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    
+   
+}
+
+main .breadcrumb ul li {
+    padding: 10px 20px;
+}
+
+main .breadcrumb ul li a {
+    color: var(--darkStaleGray);
+    text-decoration: none;
+}
+
+main .breadcrumb ul li a:hover {
+    border: 2px dotted black;
+    background-color:beige ;
+    transition: 0.5s;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+main .hero {
+    padding-top: 30px;
+    /*height: 70vh;*/
+}
+video{
+    margin-right: 50px;
+}
+main .hero video {
+    width: 50%;
+    /*height: 400px;*/
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+main .hero .hero-contents {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    background-color:powderblue;
+    border-radius: 20px;
+    border: 4px solid black;
+    border-bottom: 4px solid magenta;
+    border-right: 4px solid magenta;
+    height: 300px;
+    transition:  0.5s;
+
+}
+
+main .hero .hero-text {
+    color: var(--white);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    border-radius: 3px;
+    padding: 20px;
+}
+
+
+main .hero .hero-text h1 {
+    color: var(--darkStaleGray);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+main .hero .hero-text h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #124057;
+}
+
+.hero-text a {
+    border: 2px solid black;
+    color: var(--khaki);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.hero-text a:hover {
+    background-color: darkkhaki;
+    font-size: 20px;
+}
+.hero-text:hover{
+    height: 330px;
+    font-size: 20px;
+}
+
+/* Feature */
+
+#features {
+    padding: 20px;
+}
+
+.feature-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.feature-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color:maroon;
+    border-radius: 50%;
+    z-index: 1010;
+}
+
+#feature .feature-data div img {
+    float: left;
+    display: none;
+
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 1.4em;
+    color:black;
+    border-bottom: 2px solid maroon;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 8px;
+    display: block;
+}
+
+.feature-description {
+    display: inline-block;
+    font-size: 1.3em;
+    color: black;
+    transition: 0.5;
+    text-decoration: none;
+    padding: 5px 8px;
+}
+
+.feature-subtitle {
+    display: inline-block;
+}
+.feature-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    transform: translate(6px, -7px);
+    z-index: 1010;
+}
+/* about */
+#about {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.about-description {
+    text-align: justify;
+    font-weight: bold;
+    margin:0px 0px 0px 50px;
+}
+
+.about-title {
+    font-size: x-large;
+}
+
+#about .container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+#about .about-img {
+    text-align: left;
+}
+
+#about .about-img img {
+    float: left;
+    width: 400px;
+}
+.about-img img {
+    border-radius: 48%;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+    main .product-content, #products .products-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    #about .container {
+        grid-template-columns: 1fr;
+    }
+
+    #about .about-img img {
+        display: none;
+        float: left;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main .hero .hero-contents {
+        flex-direction: column;
+    }
+
+    main .hero .hero-contents video {
+        width: 100%;
+    }
+
+    main .hero .hero-text {
+        height: 30%;
+    }
+
+    main .product-content, #products .products-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #features .feature__content .feature__data > div:nth-child(2) {
+        display: none;
+    }
+
+    main #team .team-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #features .feature__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #features .feature__content .feature__data {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #about .about-img img {
+        float: left;
+        width: 400px;
+        transition: 0.5s ease-in-out;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    main .product-content, #products .products-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main .product-content, #products .products-section a img {
+        width: 100%;
+    }
+
+    main .collection {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    main .collection .women-collection, main .collection .men-collection {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #gallery .gallery-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main #team .team-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #features .feature__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+
+    }
+
+    #features .feature__content .feature__data {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    #about .about-img img {
+        float: left;
+        width: 300px;
+    }
+}
+

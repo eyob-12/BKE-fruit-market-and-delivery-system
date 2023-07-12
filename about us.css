@@ -1,0 +1,85 @@
+body{
+    background-color:#808080;
+}
+main {
+    background-color:aliceblue;
+    height: fit-content;
+}
+/* About Page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+main .breadcrumb {
+    background-color: var(--khaki);
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+main .about{
+    padding: 30px;
+}
+.menu ul{
+    position: absolute;
+    top:250px ;
+    right: 00px; 
+}
+main .about p{
+    letter-spacing: 0.6;
+    line-height: 24px;
+}
+
+.main_title {
+    font-size: 24px;
+    color:rgb(0, 0, 0);
+    /*border: 1px solid rgba(26, 20, 141, 0.6);*/
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    padding: 5px 8px;
+    margin: 10px;
+    display: block;
+}
+.title {
+    font-size: 24px;
+    color: maroon;
+    text-transform: uppercase;
+    text-decoration:underline;
+    padding: 5px 8px;
+    display: block;
+}
+.subtitle {
+    font-weight: bonld;
+    color: rgba(23, 7, 252, 0.911);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 8px;
+    display: block;
+}
+@media screen and (max-width: 768px){
+
+}
+
+/* TEAM */
+#team {
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+main #team .team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    align-items: center;
+}
+
+#team .team-container .team-member {
+    text-align: center;
+}
+
+#team .team-container .team-member img {
+    border-radius: 10px;
+}
